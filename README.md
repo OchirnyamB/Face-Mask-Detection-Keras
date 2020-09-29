@@ -63,15 +63,15 @@ without_mask | 1.00 | 0.98 | 0.99 | 172
 
 ### Results of the Trained Network:
 
->![With mask results](output/final_output_withMask.jpg)
+>![With mask results](output/final_output_withMask.JPG)
 
->![Without mask results](output/final_output_withoutMask.jpg)
+>![Without mask results](output/final_output_withoutMask.JPG)
 
 ### Final Thoughts:
 * **Inception V3** network might have been an over qualified arhictecture to fine-tune for this problem and dataset. Therefore, smaller epochs are used in my training to achieve satisfactory results.
 * **Prevent overfitting** your model through regularizations techniques such as data augmentation and dropout layers.
 * Always apply a **momentum and a decay** to your learning rate making your updates to your loss function adaptive which in turn increases generalization and classification accuracy.
-* **Fine-tuning and feature extraction** works best with different kind of problems. Therefore, try experimenting with both and become familiar with the transfer learning process.
+* **Fine-tuning and feature extraction** works best with different kinds of problems. Therefore, try experimenting with both and become familiar with the transfer learning process.
 * If working with a larger dataset, store the data to a binary format such as **HDF5** beforehand to prevent I/O bottlenecks.
 * The **more practice** you have at training neural networks, monitoring the results and tuning the hyperparameters, the better you'll become at it.
 * Evaluation results have shown that, my trained model works nicely with a single person images, but it has problems with an image with multiple people. My guess is that **Haar Cascades parameters need to be tuned more carefully** to properly detect faces initially before applying mask detection.
