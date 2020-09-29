@@ -13,8 +13,8 @@ Implementing a face mask detector using Keras and OpenCV.
 
 ### Steps to produce:
 1. Train a *transfer learning* neural network to detect face masks.
-2. Detect *face ROIs* from an input image using pre-trained Haar Cascades network.
-2. Run prediction on these and evaluate and fine-tune hyperparmeters of the network.
+2. Detect *face region of interests (ROIs)* from an input image using pre-trained [Haar Cascades classifier](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html).
+2. Run a prediction on these and evaluate and fine-tune hyperparmeters of the network.
 
 ### A Recipe for Training:
 1. A Dataset
