@@ -8,7 +8,7 @@ class FCHeadNet:
     def build(baseModel, classes, D): # D is the number of nodes in the fully connected layer
         # initialize the head model that will be placed on top of the base, then add a FC layer
         headModel = baseModel.output
-        headModel = AveragePooling2D(pool_size=(7,7))(headModel)
+        headModel = AveragePooling2D(pool_size=(5,5))(headModel)
         headModel = Flatten(name="flatten")(headModel)
         headModel = Dense(D, activation="relu")(headModel)
         headModel = Dropout(0.5)(headModel)

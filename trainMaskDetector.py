@@ -1,5 +1,5 @@
 # import the necessary packages
-from keras.applications import MobileNetV2
+from keras.applications import InceptionV3
 from model.fcheadnet import FCHeadNet
 from keras.applications import imagenet_utils
 from sklearn.model_selection import train_test_split
@@ -63,7 +63,7 @@ horizontal_flip=True, fill_mode="nearest")
 
 # initialize the optimizer and the models for fine-tuning
 print("[INFO] building model...")
-baseModel = MobileNetV2(weights="imagenet", include_top=False, input_tensor=Input(shape=(224,224,3)))
+baseModel = InceptionV3(weights="imagenet", include_top=False, input_tensor=Input(shape=(224,224,3)))
 headModel = FCHeadNet.build(baseModel, config.NUM_CLASSES, 128)
 model = Model(inputs=baseModel.input, outputs=headModel)
 
@@ -116,7 +116,7 @@ plt.plot(np.arange(0,config.FINETUNE_EPOCHS), H.history["loss"], label="train_lo
 plt.plot(np.arange(0,config.FINETUNE_EPOCHS), H.history["val_loss"], label="val_loss")
 plt.plot(np.arange(0,config.FINETUNE_EPOCHS), H.history["accuracy"], label="train_acc")
 plt.plot(np.arange(0,config.FINETUNE_EPOCHS), H.history["val_accuracy"], label="val_acc")
-plt.title("Training Loss and Accuracy on Flowers-17")
+plt.title("Training Loss and Accuracy")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
 plt.legend()
