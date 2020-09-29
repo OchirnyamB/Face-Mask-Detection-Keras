@@ -39,7 +39,9 @@ Fine-tuning [**Inception V3**](https://keras.io/api/applications/inceptionv3/) n
 3. Train the new FC layers until a reasonable accuracy.
 4. Unfreeze the previous layers and train the entire model again.
 
-### Regularizers
+### Regularizers:
+* SGD (Stochastic Gradient Descent)
+* Adam (Adaptive Moment Estimation)
 
 ### Evaluations of the Trained Networks:
 [Training Process Log: Evaluated to 99% Accuracy Average](output/trainingEval.txt)
