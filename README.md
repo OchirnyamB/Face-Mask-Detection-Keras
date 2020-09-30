@@ -80,6 +80,6 @@ without_mask | 1.00 | 0.98 | 0.99 | 172
 
 ### References:
 * [Deep Learning for Computer Vision with Python VOL1 & VOL2 by Dr.Adrian Rosebrock](https://www.pyimagesearch.com/deep-learning-computer-vision-python-book/)
-* [Tutorial to the original post of Dr.Adrian Rosebrock])(https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/)
+* [Tutorial to the original post of Dr.Adrian Rosebrock](https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/)
 
 
