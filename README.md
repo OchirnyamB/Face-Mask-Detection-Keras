@@ -79,7 +79,7 @@ without_mask | 1.00 | 0.98 | 0.99 | 172
 * Finally, it was a fun and a challenging project. I learned a lot and **wear your masks** :).
 
 ### References:
-* Deep Learning for Computer Vision with Python VOL1 & VOL2 by Dr.Adrian Rosebrock
+* [Deep Learning for Computer Vision with Python VOL1 & VOL2 by Dr.Adrian Rosebrock](https://www.pyimagesearch.com/deep-learning-computer-vision-python-book/)
 
 
 
